@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F4532B0B0A60CF1764F4DCC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F31917F48C49488605C6350 /* libPods.a */; };
 		32CFE6591CAE003300610F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CFE6581CAE003300610F5C /* AppDelegate.swift */; };
-		32CFE65B1CAE003300610F5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CFE65A1CAE003300610F5C /* ViewController.swift */; };
 		32CFE65E1CAE003300610F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CFE65C1CAE003300610F5C /* Main.storyboard */; };
 		32CFE6601CAE003300610F5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32CFE65F1CAE003300610F5C /* Assets.xcassets */; };
 		32CFE6631CAE003300610F5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CFE6611CAE003300610F5C /* LaunchScreen.storyboard */; };
 		32CFE66E1CAE003300610F5C /* rudaoOnlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CFE66D1CAE003300610F5C /* rudaoOnlineTests.swift */; };
+		32CFE67D1CAE121100610F5C /* ROViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CFE67C1CAE121100610F5C /* ROViewController.swift */; };
+		32CFE67F1CAE168100610F5C /* logonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CFE67E1CAE168100610F5C /* logonViewController.swift */; };
+		32CFE6811CAE219F00610F5C /* bridgeing-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 32CFE6801CAE215100610F5C /* bridgeing-Header.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F31917F48C49488605C6350 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CFE6551CAE003300610F5C /* rudaoOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rudaoOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CFE6581CAE003300610F5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		32CFE65A1CAE003300610F5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32CFE65D1CAE003300610F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32CFE65F1CAE003300610F5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32CFE6621CAE003300610F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		32CFE6691CAE003300610F5C /* rudaoOnlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rudaoOnlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CFE66D1CAE003300610F5C /* rudaoOnlineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rudaoOnlineTests.swift; sourceTree = "<group>"; };
 		32CFE66F1CAE003300610F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32CFE67C1CAE121100610F5C /* ROViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROViewController.swift; sourceTree = "<group>"; };
+		32CFE67E1CAE168100610F5C /* logonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logonViewController.swift; sourceTree = "<group>"; };
+		32CFE6801CAE215100610F5C /* bridgeing-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bridgeing-Header.h"; sourceTree = "<group>"; };
+		6D9EC635ACB589AE64D4A8A7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EC798C09320AFE8602C4034A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4532B0B0A60CF1764F4DCC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +68,12 @@
 		32CFE64C1CAE003300610F5C = {
 			isa = PBXGroup;
 			children = (
+				32CFE6801CAE215100610F5C /* bridgeing-Header.h */,
 				32CFE6571CAE003300610F5C /* rudaoOnline */,
 				32CFE66C1CAE003300610F5C /* rudaoOnlineTests */,
 				32CFE6561CAE003300610F5C /* Products */,
+				6C1BFE7111D4C2806110AA82 /* Pods */,
+				A552C2F24E3FACBFE5404C03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +89,8 @@
 		32CFE6571CAE003300610F5C /* rudaoOnline */ = {
 			isa = PBXGroup;
 			children = (
+				32CFE6781CAE119100610F5C /* UI */,
 				32CFE6581CAE003300610F5C /* AppDelegate.swift */,
-				32CFE65A1CAE003300610F5C /* ViewController.swift */,
 				32CFE65C1CAE003300610F5C /* Main.storyboard */,
 				32CFE65F1CAE003300610F5C /* Assets.xcassets */,
 				32CFE6611CAE003300610F5C /* LaunchScreen.storyboard */,
@@ -96,6 +108,56 @@
 			path = rudaoOnlineTests;
 			sourceTree = "<group>";
 		};
+		32CFE6781CAE119100610F5C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				32CFE67B1CAE11C700610F5C /* Other */,
+				32CFE6791CAE119C00610F5C /* LoadReg */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		32CFE6791CAE119C00610F5C /* LoadReg */ = {
+			isa = PBXGroup;
+			children = (
+				32CFE67A1CAE11AE00610F5C /* newpage */,
+				32CFE67E1CAE168100610F5C /* logonViewController.swift */,
+			);
+			name = LoadReg;
+			sourceTree = "<group>";
+		};
+		32CFE67A1CAE11AE00610F5C /* newpage */ = {
+			isa = PBXGroup;
+			children = (
+				32CFE67C1CAE121100610F5C /* ROViewController.swift */,
+			);
+			name = newpage;
+			sourceTree = "<group>";
+		};
+		32CFE67B1CAE11C700610F5C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		6C1BFE7111D4C2806110AA82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC798C09320AFE8602C4034A /* Pods.debug.xcconfig */,
+				6D9EC635ACB589AE64D4A8A7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A552C2F24E3FACBFE5404C03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F31917F48C49488605C6350 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32CFE6721CAE003300610F5C /* Build configuration list for PBXNativeTarget "rudaoOnline" */;
 			buildPhases = (
+				8B278BAEC574F9B8DFECD21A /* Check Pods Manifest.lock */,
 				32CFE6511CAE003300610F5C /* Sources */,
 				32CFE6521CAE003300610F5C /* Frameworks */,
 				32CFE6531CAE003300610F5C /* Resources */,
+				80C3E6ABC110229A6A51AA2E /* Embed Pods Frameworks */,
+				ED146A1F5F9CC569E8C8F920 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,13 +257,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		80C3E6ABC110229A6A51AA2E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B278BAEC574F9B8DFECD21A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED146A1F5F9CC569E8C8F920 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		32CFE6511CAE003300610F5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32CFE65B1CAE003300610F5C /* ViewController.swift in Sources */,
+				32CFE6811CAE219F00610F5C /* bridgeing-Header.h in Sources */,
 				32CFE6591CAE003300610F5C /* AppDelegate.swift in Sources */,
+				32CFE67D1CAE121100610F5C /* ROViewController.swift in Sources */,
+				32CFE67F1CAE168100610F5C /* logonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,23 +440,27 @@
 		};
 		32CFE6731CAE003300610F5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC798C09320AFE8602C4034A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = rudaoOnline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hanzhe.rudaoOnline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bridgeing-Header.h";
 			};
 			name = Debug;
 		};
 		32CFE6741CAE003300610F5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D9EC635ACB589AE64D4A8A7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = rudaoOnline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hanzhe.rudaoOnline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bridgeing-Header.h";
 			};
 			name = Release;
 		};
@@ -388,6 +507,7 @@
 				32CFE6741CAE003300610F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32CFE6751CAE003300610F5C /* Build configuration list for PBXNativeTarget "rudaoOnlineTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +516,7 @@
 				32CFE6771CAE003300610F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +17,51 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchImage" translatesAutoresizingMaskIntoConstraints="NO" id="WhZ-vP-K6S">
+                                <rect key="frame" x="216" y="194" width="384" height="398"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="384" id="gLO-iw-Q2L"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WhZ-vP-K6S" secondAttribute="trailing" id="1tf-eq-A7F"/>
+                            <constraint firstItem="WhZ-vP-K6S" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="3LB-8H-0wV"/>
+                            <constraint firstItem="WhZ-vP-K6S" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="174" id="7YR-qS-sua"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="WhZ-vP-K6S" secondAttribute="bottom" constant="8" symbolic="YES" id="EEf-OB-qDQ"/>
+                            <constraint firstItem="WhZ-vP-K6S" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="Ldl-Db-IkX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WhZ-vP-K6S" secondAttribute="trailing" constant="-20" id="Q0A-Gi-zn0"/>
+                            <constraint firstItem="WhZ-vP-K6S" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="WXi-Fa-Gq5"/>
+                            <constraint firstItem="WhZ-vP-K6S" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="zHZ-zj-Dx1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3LB-8H-0wV"/>
+                                <exclude reference="Ldl-Db-IkX"/>
+                                <exclude reference="Q0A-Gi-zn0"/>
+                                <exclude reference="WXi-Fa-Gq5"/>
+                                <exclude reference="zHZ-zj-Dx1"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="3LB-8H-0wV"/>
+                                <include reference="Ldl-Db-IkX"/>
+                                <include reference="Q0A-Gi-zn0"/>
+                                <include reference="WXi-Fa-Gq5"/>
+                                <include reference="zHZ-zj-Dx1"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-135" y="419"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launchImage" width="320" height="480"/>
+    </resources>
 </document>
